@@ -12,6 +12,7 @@ android {
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
+    local_auth v3
         targetCompatibility = JavaVersion.VERSION_17
     }
 
@@ -29,6 +30,10 @@ android {
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
+    depenencies (
+        implementation("androidx.fragment:fragment-ktx:1.6.2")
+    local_auth v3
+    )
 
     buildTypes {
         release {
